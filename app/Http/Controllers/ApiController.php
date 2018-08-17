@@ -21,7 +21,6 @@ class ApiController extends Controller
     }
 
     public function initClient(){
-
         $client = new \Google_Client();
         $client->setAuthConfigFile(base_path('client_secret.json'));
         $client->setApprovalPrompt('force');

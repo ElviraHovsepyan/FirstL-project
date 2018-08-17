@@ -6,20 +6,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
-
     <title>First Laravel Project</title>
-
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
     <link href="/public/css/style.css" rel="stylesheet">
   </head>
-
   <body>
-
 @section('navbar')
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -27,7 +22,6 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
@@ -51,8 +45,6 @@
           <li class="nav-item">
             <a class="nav-link disabled" href="{{ route('searchView') }}">Search</a>
           </li>
-        
-
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
@@ -60,15 +52,12 @@
         </form>
       </div>
     </nav>
-
 @endsection
 @yield('navbar')
-
 
 @section('header')
 
     <main role="main">
-
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <div class="container">

@@ -1,9 +1,6 @@
 @extends('default.layouts.layout')
-
 @section('sidebar')
-
 @endsection
-
 @section('content')
 	<h2>Upload file</h2>
 	<form method="post" action="{{ route('upload') }}" enctype="multipart/form-data">
@@ -11,7 +8,6 @@
 		<input type="file" name="video" id="video">
 		<input type="submit">
 	</form><br><br>
-
 	<h2>Search</h2>
 	<form id="searchForm">
 		{{ csrf_field() }}
@@ -25,8 +21,6 @@
 		<input type="submit" value="Search">
 	</form><br>
 	<div class="searchResults"></div>
-
-
 @endsection
 
 

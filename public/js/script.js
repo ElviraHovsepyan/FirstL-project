@@ -5,17 +5,13 @@ $.ajaxSetup({
     }
 });
 
-
-
 $('#search').keyup(function () {
     var key =  $('#search').val();
     if(key.length>2){
         key = key.slice(0,2);
         var arr = JSON.parse(localStorage.getItem('searchData'));
         $('.searchHelp').empty();
-
         for(var i =0; i< arr.length; i++){
-
            if(arr[i].search(key)==0){
                $('.searchHelp').append('<p class="item" onclick="clickOnP('+i+')">'+arr[i]+'</p>');
                $('.searchHelp').show();
