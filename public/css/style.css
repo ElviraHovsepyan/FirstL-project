@@ -1,0 +1,19 @@
+.inputDiv{
+    position: relative;
+}
+.searchHelp{
+    position: absolute;
+    width: 260px;
+    background-color: whitesmoke;
+    border: 1px solid #007bff;
+    left: 93px;
+    z-index: 777;
+}
+.searchHelp p{
+    padding-left: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#search{
+    width: 260px;
+}

@@ -15,8 +15,9 @@
 	<h2>Search</h2>
 	<form id="searchForm">
 		{{ csrf_field() }}
-		<div>
-			Search Term: <input type="text" id="search" name="search" placeholder="Enter Search Term">
+		<div class="inputDiv">
+			Search Term: <input type="text" id="search" name="search" placeholder="Enter Search Term" autocomplete="off">
+			<div class="searchHelp"></div>
 		</div><br>
 		<div>
 			Max Results: <input type="number" id="maxResults" name="maxResults" min="1" max="50" step="1" value="10">

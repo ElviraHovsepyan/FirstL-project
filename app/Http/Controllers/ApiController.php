@@ -49,6 +49,7 @@ class ApiController extends Controller
         }
         return redirect()->route('start');
     }
+
     public function setClientToken(){
         $client = $this->initClient();
         $tokenRow = YouTubeToken::find(1);
@@ -86,11 +87,10 @@ class ApiController extends Controller
     }
 
     public function upload(Request $request){
-
         $client = $this->setClientToken();
         $youtube = new \Google_Service_YouTube($client);
         $myVideo = $request->file('video');
-        $videoPath = $myVideo;
+        $videoPath = $myVideo->getPathname();
 
         $snippet = new \Google_Service_YouTube_VideoSnippet();
         $snippet->setTitle("First Upload");
@@ -123,7 +123,6 @@ class ApiController extends Controller
             $chunk = fread($handle, $chunkSizeBytes);
             $status = $media->nextChunk($chunk);
         }
-
         fclose($handle);
         $client->setDefer(false);
 

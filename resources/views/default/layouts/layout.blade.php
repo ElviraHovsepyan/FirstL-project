@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
+    <link href="/public/css/style.css" rel="stylesheet">
   </head>
 
   <body>
